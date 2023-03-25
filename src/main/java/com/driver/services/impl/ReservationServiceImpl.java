@@ -36,7 +36,7 @@ Spot bookedSpot = null;
 int minPrice = Integer.MAX_VALUE;
 
 for(Spot s :spotList){
-    if(!s.isOccupied()){
+    if(!s.getOccupied()){
         if(SpotTypeUtil(s.getSpotType())>= numberOfWheels){
             if(s.getPricePerHour()*timeInHours < minPrice){
                 minPrice = s.getPricePerHour()*timeInHours;
