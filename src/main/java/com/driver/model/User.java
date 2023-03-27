@@ -21,11 +21,11 @@ public class User {
     public User() {
     }
 
-    public User(String name, String phoneNo, String password) {
-        this.name = name;
-        this.phoneNo = phoneNo;
-        this.password = password;
-    }
+//    public User(String name, String phoneNo, String password) {
+//        this.name = name;
+//        this.phoneNo = phoneNo;
+//        this.password = password;
+//    }
 
     public User(int id, String name, String phoneNo, String password, List<Reservation> reservationList) {
         this.id = id;
