@@ -51,7 +51,7 @@ if (bookedSpot ==null)throw new Exception("Cannot make reservation");
 Reservation reservation = new Reservation();
 reservation.setSpot(bookedSpot);
 reservation.setUser(user);
-reservation.setNoOfHours(timeInHours);
+reservation.setNumberOfHours(timeInHours);
 
 bookedSpot.getReservationList().add(reservation);
 bookedSpot.setOccupied(true);

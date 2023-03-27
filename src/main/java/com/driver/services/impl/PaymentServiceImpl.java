@@ -30,7 +30,7 @@ payment.setPaymentMode(paymentMode);
 payment.setPaymentCompleted(true);
 
         Reservation reservation = reservationRepository2.findById(reservationId).get();
-        int bill = reservation.getSpot().getPricePerHour()*reservation.getNoOfHours();
+        int bill = reservation.getSpot().getPricePerHour()*reservation.getNumberOfHours();
         if (amountSent<bill)
             throw new Exception("Insufficient Amount");
         payment.setReservation(reservation);
